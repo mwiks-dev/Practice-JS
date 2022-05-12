@@ -1,4 +1,4 @@
-# 1 MIN OF YOU
+# PRACTICE JS
 ### 02/05/2022
 ## Author
 [Maryann Mwikali](https://github.com/Maryan23)
