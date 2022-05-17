@@ -116,4 +116,6 @@ canWork;
 //isAdult;
 //canDrink;
 
+//Since the age is set to 21 all cases will pass since there is no break statement,but if the age was to be changed to 20 the first case would fail but the other two would pass
+
 
