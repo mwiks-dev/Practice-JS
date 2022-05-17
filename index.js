@@ -18,3 +18,6 @@
 // 2.Switch statements
 // 3.Ternary expressions
 
+
+// === - strict equality comparison
+// = - Assignment operator

@@ -1,4 +1,4 @@
-// Ternary expressions
+//TERNARY EXPRESSIONS 
 
 // Example 1
 const fare = 300;
@@ -25,7 +25,8 @@ let ageMessage = years >= 18 ? 'You are now adult' : 'Enjoy your youth'
 ageMessage;
 //Returns 'You are now an adult'
 
-//If statements
+//IF STATEMENTS
+
 const price = 400;
 let inflation ;
 if (price >= 500){
@@ -44,3 +45,75 @@ if (shoePair < 2500){
 }
 quality; 
 //Returns good because our shoe pair is greater than 2500
+
+//SWITCH STATEMENT
+const title = "Alice";
+let greeting;
+
+switch (title) {
+  case "Alice":
+    greeting = "Hello, Alice!";
+    break;
+  case "The White Rabbit":
+    greeting = "Don't be late, White Rabbit";
+    break;
+  case "The Mad Hatter":
+    greeting = "Welcome to the tea party, Mad Hatter";
+    break;
+  case "The Queen of Hearts":
+    greeting = "Please don't chop off my head!";
+    break;
+  default:
+    greeting = "Who are you?";
+}
+
+greeting;
+//will return 'Hello, Alice!'
+
+const name = "Grumpy";
+let characterType;
+
+switch (name) {
+  case "Sleepy":
+  case "Sneezy":
+  case "Happy":
+  case "Grumpy":
+  case "Bashful":
+  case "Dopey":
+  case "Doc":
+    characterType = "dwarf";
+    break;
+  case "Handsome Prince":
+    characterType = "hero";
+    break;
+  case "Evil Queen":
+    characterType = "villain";
+    break; //break is used to stop the switch statement from continuing to look at case statements once it finds a match. If we left out the break keywords, the JavaScript engine would first assign characterType to "dwarf" when it reached the "Grumpy" case (as desired), but the code would continue to execute and characterType would wind up being reset to "minor character." To keep that from happening, we use break to tell the JavaScript engine to stop executing the switch statement as soon as it finds a match. 
+  case "Snow White":
+    characterType = "heroine";
+    break;
+  default: //this keyword is similar to else in an if else statement but is different in such a way that the only time it does not run is if the engine hits a break in one of the case statements
+    characterType = "minor character";
+}
+
+characterType;
+
+//Advanced 
+const agey = 21;
+let isAdult, canWork, canEnlist, canDrink;
+
+switch (true) {
+  case agey >= 21:
+    canDrink = true;
+  case agey >= 18:
+    isAdult = true;
+    canEnlist = true;
+  case agey >= 16:
+    canWork = true;
+}
+canWork;
+//canEnlist;
+//isAdult;
+//canDrink;
+
+
