@@ -40,3 +40,6 @@ console.log(string.toUpperCase());
 //=> "HELLO"
 console.log(string);
 //=> "Hello"
+
+// array_methods = add elements in an array(push(), unshift(),spreadoperator()), 
+                // remove elements in an array(pop(),shift(),slice(),splice()),
