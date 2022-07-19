@@ -43,8 +43,11 @@ const userInfo = {
 
   function deepIterator(target) {
     counter++;
-  
-    if (typeof target === "object") {
+    if (Array.isArray(target)) {
+      for (const element of target) {
+        deepIterator(element);
+      }
+    } else if (typeof target === "object") {
       for (const key in target) {
         deepIterator(target[key]);
       }
