@@ -80,3 +80,10 @@ console.log(userInfo.firstName);
 console.log(userInfo.company.jobTitle);  
 console.log(userInfo.friends[1].firstName);
 console.log(userInfo.projects[0].title);
+
+//Traversing nested arrays
+//We can traverse nested arrays by using the bracket notation to access the nested array.
+const letters = ["a", ["b", ["c", ["d", ["e"]], "f"]]];
+//To access letter e we need to:
+console.log(letters[1][1][1][1][0]);
+
