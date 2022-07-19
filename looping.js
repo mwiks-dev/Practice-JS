@@ -35,5 +35,48 @@ const address = {
 for (const key in address) {
     console.log(address[key]);
   }
-  
 
+//Traversing nested objects
+//We can traverse nested objects by using the dot notation to access the nested object.
+const userInfo = {
+    firstName: "Avi",
+    lastName: "Flombaum",
+    company: {
+      name: "Flatbook Labs",
+      jobTitle: "Developer Apprentice",
+    },
+    friends: [
+      {
+        firstName: "Nancy",
+        lastName: "Burgess",
+        company: {
+          name: "Flatbook Labs",
+          jobTitle: "Developer Apprentice",
+        },
+      },
+      {
+        firstName: "Corinna",
+        lastName: "Jackson",
+        company: {
+          name: "Flatbook Labs",
+          jobTitle: "Lead Developer",
+        },
+      },
+    ],
+    projects: [
+      {
+        title: "Flatbook",
+        description:
+          "The premier Flatiron School-based social network in the world.",
+      },
+      {
+        title: "Scuber",
+        description:
+          "A burgeoning startup helping busy parents transport their children to and from all of their activities on scooters.",
+      },
+    ],
+  };
+console.log(userInfo.firstName);
+console.log(userInfo.company.jobTitle);  
+console.log(userInfo.friends[1].firstName);
+console.log(userInfo.projects[0].title);
